@@ -3,14 +3,14 @@ sudo: false
 language: node_js
 node_js: node
 
-#install:
-#  - npm ci
+before_install:
+  - npm ci
 
 script:
-  - npm test
+  - npm run test
 
-after_success:
-  - npm run coveralls
+#after_success:
+#  - npm run coveralls
 
 notifications:
   email: true
